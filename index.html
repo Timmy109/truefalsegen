@@ -1,14 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
+
     <title>You must be in a pickle</title>
+
     <link rel='icon' href='favicon.png' type='image/x-icon'>
 </head>
+
 <body>
-<div style="text-align:center;margin:auto;color:black;font-size:100px;font-weight:bold">
-    Are you in a pickle?
-    </div>
+
+<div style="text-align:center;margin:auto;color:black;font-size:100px;font-weight:bold">Are you in a pickle?</div>
+
 <p>Let the 8 Ball decide for you!</p>
 
 <form name="form" action="#" onsubmit="required()">
@@ -18,7 +23,6 @@
         </div>
 </form>
 
-
 <div class="buttonClass">
     <button type="button" style="margin-top:1%;margin-bottom:1%;" onclick="randomGenerator()">Generate</button>
 </div>
@@ -26,17 +30,25 @@
 <div class="output">
     <img id="this" src="images/ask.png" height="500px" width="500px" style="text-align:center;margin:auto;display:block;margin-right:auto;margin-left:auto;margin-top:0%;margin-bottom:0%;">
 </div>
+
 </body>
+
 <footer>
     <copyright>Copyright (c) 2020 Tim Uding</copyright>
 </footer>
+
     <script>
         function randomGenerator() {
+
             const empt = document.forms["form"]["textbox"].value;
+
             if (empt === "") {
+
                 window.alert("Please enter a question!")
                 return;
+
             } else {
+
                 let randomGen = Math.floor(Math.random() * 7);
                 console.log(randomGen);
                 switch (randomGen) {
@@ -64,11 +76,15 @@
                         document.getElementById("this").src = "images/cannotTellNow.png";
                         emptyTextBox();
                         break;
+
                 }
             }
         }
+
         function emptyTextBox() {
             document.getElementById('newtextbox').value = "";
         }
+
     </script>
+
 </html>
