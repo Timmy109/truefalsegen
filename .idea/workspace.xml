@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2446b412-d680-45d8-8ce2-4f5bb140ebc6" name="Default Changelist" comment="Fix formatting/indents" />
+    <list default="true" id="2446b412-d680-45d8-8ce2-4f5bb140ebc6" name="Default Changelist" comment="Fix formatting/indents">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +38,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -30,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603837908217</updated>
       <workItem from="1603837909289" duration="815000" />
-      <workItem from="1603840338618" duration="382000" />
+      <workItem from="1603840338618" duration="684000" />
     </task>
     <task id="LOCAL-00001" summary="Fix formatting/indents">
       <created>1603840698502</created>
@@ -65,5 +86,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="253" y="16" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1603839298319" />
+    <state x="275" y="90" key="Vcs.Push.Dialog.v2" timestamp="1603840701180">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="90" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1603840701180" />
   </component>
 </project>
