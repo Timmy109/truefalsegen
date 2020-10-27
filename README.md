@@ -1,7 +1,14 @@
 # Yeah sooooo
 
-## This project is purely for when I need to make decisions on the go
+#### Welcome to the perfect webpage for helping you make big life decisions!
 
+## **What does this webpage do?**
+* Help you decide when quick decisions are required
+* Cure your neediness for extremely beautiful & professional code
+* Act as a personal companion during times of great stress
+* Helps guide you as a person through life by making all decisions for you
+* Makes you depend on the 8 Ball to help with you big life decisions
+* Can most likely ruin your life
 
 ## **Terms and conditions of use**
 
