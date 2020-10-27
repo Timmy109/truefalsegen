@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="../../Desktop/JavaScript%20Practice/style.css">
+    <link rel="stylesheet" href="var/www/truefalsegen/style.css">
+    <title>You must be in a pickle</title>
 </head>
 <div id="grad1" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
     Are you in a pickle?
@@ -18,16 +19,15 @@
 <div class="refreshButton">
     <button type="button" onclick="location.reload()">Reload</button>
 </div>
-</div>
     <script>
         function randomGenerator(){
             let randomGen = Math.round((Math.random() * 1) + 1);
             console.log(randomGen);
             if (randomGen === 1) {
-                document.getElementById("this").innerHTML = "Most definitely, Tim is Gay!!"
+                document.getElementById("this").innerHTML = "Most definitely!"
                 console.log("yes");
             } else {
-                document.getElementById("this").innerHTML = "Yeah, no... Tim is gay for sure."
+                document.getElementById("this").innerHTML = "Yeah, no..."
                 console.log("no");
             }         
         }
