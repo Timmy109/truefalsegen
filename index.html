@@ -3,35 +3,70 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <title>You must be in a pickle</title>
-    <link rel='icon' href='images/pickle.png' type='image/x-icon'>
+    <link rel='icon' href='favicon.png' type='image/x-icon'>
 </head>
 <div style="text-align:center;margin:auto;color:black;font-size:100px;font-weight:bold">
     Are you in a pickle?
     </div>
-<p>Let fate decide.</p>
+<p>Let the 8 Ball decide for you!</p>
 
-<div class="output">
-    <p id="this" style="font-size:100px;height:100px"></p>
-</div>
+<form name="form" action="#" onsubmit="required()">
+        <div>
+            <text style="font-size:30px;text-align:center;margin:auto;display:block;margin-right:auto;margin-left:auto;margin-top:0%;margin-bottom:0%;">Question:</text>
+            <input id="newtextbox" name="textbox" type="text" style="text-align:center;margin:auto;display:block;margin-right:auto;margin-left:auto;margin-top:0%;margin-bottom:1%;">
+        </div>
+</form>
+
 
 <div class="buttonClass">
-    <button type="button" onclick="randomGenerator()">Yes or no?</button> 
-    </div>
-<div class="refreshButton">
-    <button type="button" onclick="location.reload()">Reload</button>
+    <button type="button" style="margin-top:1%;margin-bottom:1%;" onclick="randomGenerator()">Generate</button>
 </div>
+
+<div class="output">
+    <img id="this" src="images/ask.png" height="500px" width="500px" style="text-align:center;margin:auto;display:block;margin-right:auto;margin-left:auto;margin-top:0%;margin-bottom:0%;">
+</div>
+<footer>
+    <copyright>Copyright (c) Tim Uding 2020</copyright>
+</footer>
     <script>
-        function randomGenerator(){
-            let randomGen = Math.round((Math.random()) + 1);
-            console.log(randomGen);
-            if (randomGen === 1) {
-                document.getElementById("this").innerHTML = "Most definitely!"
-                console.log("yes");
+        function randomGenerator() {
+            const empt = document.forms["form"]["textbox"].value;
+            if (empt === "") {
+                window.alert("Please enter a question!")
+                return;
             } else {
-                document.getElementById("this").innerHTML = "Hell nah"
-                console.log("no");
-            }         
+                let randomGen = Math.floor(Math.random() * 7);
+                console.log(randomGen);
+                switch (randomGen) {
+                    case randomGen = 1:
+                        document.getElementById("this").src = "images/no.png";
+                        emptyTextBox();
+                        break;
+                    case randomGen = 2:
+                        document.getElementById("this").src = "images/yes.png";
+                        emptyTextBox();
+                        break;
+                    case randomGen = 3:
+                        document.getElementById("this").src = "images/veryLikely.png";
+                        emptyTextBox();
+                        break;
+                    case randomGen = 4:
+                        document.getElementById("this").src = "images/notNow.png";
+                        emptyTextBox();
+                        break;
+                    case randomGen = 5:
+                        document.getElementById("this").src = "images/countOnIt.png";
+                        emptyTextBox();
+                        break;
+                    case randomGen = 6:
+                        document.getElementById("this").src = "images/cannotTellNow.png";
+                        emptyTextBox();
+                        break;
+                }
+            }
+        }
+        function emptyTextBox() {
+            document.getElementById('newtextbox').value = "";
         }
     </script>
-
 </html>

@@ -3,9 +3,7 @@ p {
     text-align: center;
 }
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background-color: white;
 }
 @keyframes gradient {
     0% {
@@ -19,13 +17,14 @@ body {
     }
 }
 button {
-    background-color:gray;
-    margin-left:auto;
-    margin-right:auto;
     display:block;
-    margin-top:0%;
-    margin-bottom:0%;
+    margin: 0% auto;
     font-size:50px;
+    border-radius: 20%;
+    background: gray linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    text-decoration: none;
 }
 .buttonClass {
     width:100%;
